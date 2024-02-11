@@ -1,64 +1,166 @@
-// $(".nav-switch").on('click', function (e) {
-//     e.preventDefault();
-//     $(".slicknav_btn").click();
-// });
+/* ===================================
+--------------------------------------
+	Boto | Photography HTML Template
+	Version: 1.0
+	Copyright By: ColorLib
+--------------------------------------
+======================================*/
 
-// $('.nav__menu').slicknav({
-//     'appendTo' : '.main__menu',
-//     'openedSymbol': '<i class="fa fa-angle-up"></i>',
-//     'closedSymbol': '<i class="fa fa-angle-right"></i>'
-// });
+'use strict';
+
+$(window).on('load', function() {
+	/*------------------
+		Preloder
+	--------------------*/
+	$(".loader").fadeOut();
+	$("#preloder").delay(400).fadeOut("slow");
+
+});
+
+(function($) {
+
+	/*------------------
+		Background Set
+	--------------------*/
+	$('.set-bg').each(function() {
+		var bg = $(this).data('setbg');
+		$(this).css('background-image', 'url(' + bg + ')');
+	});
+
+
+	/*------------------
+		Navigation
+	--------------------*/
+    $(".nav-switch").on('click', function (e) {
+		e.preventDefault();
+        $(".slicknav_btn").click();
+	});
+	
+	$('.nav__menu').slicknav({
+		'appendTo' : '.main__menu',
+		'openedSymbol': '<i class="fa fa-angle-up"></i>',
+		'closedSymbol': '<i class="fa fa-angle-right"></i>'
+	});
+
+	/*---------------
+		Search
+	----------------*/
+    // $('.search-switch').on('click', function (e) {
+	// 	e.preventDefault();
+    //     $('.search-model').fadeIn(400);
+    // });
+
+    // $('.search-close-switch').on('click', function () {
+    //     $('.search-model').fadeOut(400, function () {
+    //         $('#search-input').val('');
+    //     });
+	// });
+
+	/*-------------------
+		Hero Slider
+	// -------------------*/
+	// $('.hero-slider').slick({
+	// 	dots: false,
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	slidesToShow: 1,
+	// 	centerMode: true,
+	// 	variableWidth: true,
+	// 	centerMode: true,
+	// 	arrows: false,
+	// 	asNavFor: '.hero-text-slider',
+	// 	autoplay: true,
+	// 	pauseOnHover:false,
+	// 	autoplaySpeed: 3000,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 480,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1
+	// 			}
+	// 		}
+	// 	]
+	// });
+	
+	// var hero_slider = $('.hero-slider');
+
+	// hero_slider.on('wheel', (function(e) {
+	// 	e.preventDefault();
+	// 	if (e.originalEvent.deltaY < 0) {
+	// 		$(this).slick('slickPrev');
+	// 	} else {
+	// 		$(this).slick('slickNext');
+	// 	}
+	// }));
+
+	// hero_slider.on('click', '.slick-slide', function (e) {
+	// 	e.preventDefault();
+	// 	var index = $(this).data("slick-index");
+	// 	if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+	// 		$('.slick-slider').slick('slickGoTo', index);
+	// 	}
+	// });
+
+	// $('.hero-text-slider').slick({
+	// 	dots: false,
+	// 	infinite: false,
+	// 	speed: 300,
+	// 	arrows: false,
+	// 	asNavFor: '.hero-slider',
+	// });
+
+	/*-------------------
+		Blog Slider
+	-------------------*/
+	// $('.blog__slider').slick({
+	// 	dots: false,
+	// 	infinite: true,
+	// 	speed: 300,
+	// 	arrows: false,
+	// 	centerMode: true,
+	// 	centerPadding: '190px',
+	// 	slidesToShow: 2,
+	// 	autoplay: true,
+	// 	pauseOnHover:false,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 991,
+	// 			settings: {
+	// 			centerPadding: '0',
+	// 			slidesToShow: 2,
+	// 			slidesToScroll: 2
+	// 			}
+	// 		},
+	// 		{
+	// 			breakpoint: 480,
+	// 			settings: {
+	// 				centerMode: false,
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 				centerPadding: '0',
+	// 			}
+	// 		}
+	// 	]
+	// });
+
+	/*-------------------
+		Progress Bars
+	-------------------*/
 
 
 
-// Products
+	
+	$('.progress-bar-style').each(function() {
+		var progress = $(this).data("progress");
+		var prog_width = progress + '%';
+		if (progress <= 100) {
+			$(this).append('<div class="bar-inner" style="width:' + prog_width + '"></div>');
+		}
+		else {
+			$(this).append('<div class="bar-inner" style="width:100%"></div>');
+		}
+	});
 
-
-const product = document.getElementById('product')
-
-
-async function getProducts() {
-    const res = await axios.get(`https://655c844f25b76d9884fd70a7.mockapi.io/products`)
-    const data = await res.data
-    db = data
-    console.log(db);
-    db.map(item => {
-        const box = document.createElement('div')
-        box.className = 'box col-12 col-sm-4 col-lg-4'
-        box.innerHTML = `
-        <div class="boxes">
-        <h1>${item.name}</h1>
-        <h2>€ ${item.price}</h2>
-        <p>${item.description}</p>
-        <div class="buttons">
-            <button class="add" onclick="addToCart(${item.id})">Add to cart</button>
-            <button class="wishlist" onclick="addToWishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
-        </div>
-    </div>
-        `
-        product.appendChild(box)
-    })
-}
-
-function addToCart(id) {
-    const cart = JSON.parse(localStorage.getItem('cart')) || []
-    let productItem = cart.find(item => item.id == id)
-    if (productItem) {
-        productItem.count = (productItem.count || 1) +1
-    } else {
-        cart.push(db.find(item => item.id == id))
-    }
-    localStorage.setItem('cart', JSON.stringify(cart))
-}
-function addToWishlist(id) {
-    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
-    let productItem = wishlist.find(item => item.id == id)
-    if (productItem) {
-        alert('Only 1 product')
-    } else {
-        wishlist.push(db.find(item => item.id == id))
-        localStorage.setItem('wishlist', JSON.stringify(wishlist))
-    }
-}
-getProducts()
+})(jQuery);
 
