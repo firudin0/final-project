@@ -1,0 +1,46 @@
+.pro #product {
+    width: 90%;
+  }
+  .pro #product .box .boxes {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 7px;
+  }
+  .pro #product .box .boxes .buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pro #product .box .boxes .buttons .wishlist {
+    border: none;
+    background-color: transparent;
+    color: black;
+    transition: color 0.4s ease;
+  }
+  .pro #product .box .boxes .buttons .wishlist:hover {
+    color: red;
+  }
+  .pro #product .box .boxes .buttons .add {
+    width: 99px;
+    height: 33px;
+    background-color: #fda403;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro #product .box .boxes .buttons .add:hover {
+    background-color: #cb8402;
+  }
+  .pro #product .box .boxes img {
+    width: 100%;
+    height: auto;
+  }

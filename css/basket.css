@@ -1,0 +1,54 @@
+.pro {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 21px;
+	margin-bottom: 5%;
+}
+
+
+
+
+
+.pro #product {
+    width: 90%;
+  }
+  .pro #product .box .boxes {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 7px;
+  }
+  .pro #product .box .boxes .buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pro #product .box .boxes .buttons .add {
+    width: 99px;
+    height: 33px;
+    background-color:  #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+
+  .pro #product .box .boxes .buttons .add:hover {
+    background-color: #537480;
+  }
+  .pro #product .box .boxes img {
+    width: 100%;
+    height: auto;
+  }

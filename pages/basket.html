@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/basket.css">
   </head>
   <body>
 
@@ -69,37 +69,35 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="nav__menu">
                   <li>
-                    <a href="/pages/home.html" >Home</a>
+                    <a href="/pages/home.html">Home</a>
                   </li>
-                  <li><a href="/pages/about.html" class="menu--active">About</a></li>
+                  <li><a href="/pages/about.html">About</a></li>
                   <li><a href="/pages/gallery.html">Gallery</a></li>
                   <li><a href="/pages/services.html">Services</a></li>
                   <li><a href="/pages/contact.html">Contact</a></li>
                   <li class="addIcon"> <a href="/pages/wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
-                  <li class="addIcon"><a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a></li>
-                  <li class="addIcon"><a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a></li>
-                </ul>
-              </div>
+                <li class="addIcon"><a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li class="addIcon"><a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a></li>
+              </ul>
             </div>
-            <div class="headerSwitch">
-              <a href="/pages/wishlist.html"><i class="fa-regular fa-heart"></i></a>
-              <a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a>
-              <a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a>
+          </div>
+          <div class="headerSwitch">
+            <a href="/pages/wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a>
             </div>
           </nav>
         </div>
       </header>
   
 
-<main>
-
-
-
-
-
-
-
-</main>
+      <main>
+        <section>
+          <div class="pro">
+            <div class="row" id="product"></div>
+          </div>
+        </section>
+      </main>
 
 
 
@@ -151,6 +149,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/js/home.js"></script>
+    <script src="/js/basket.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
