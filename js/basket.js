@@ -6,12 +6,12 @@ function getBasket() {
     let cart = JSON.parse(localStorage.getItem('cart')) || []
      cart.map((item,index) => {
         const box = document.createElement('div')
-        box.className = 'box col-12 col-sm-4 col-lg-2'
+        box.className = 'box col-12 col-sm-4 col-lg-4'
         box.innerHTML = `
         <div class="boxes">
-        <img src="${item.image}" alt="">
-        <p>${item.name}</p>
-        <p>$ ${item.price}</p>
+        <h1>${item.name}</h1>
+        <h2>€ ${item.price}</h2>
+        <p>${item.description}</p>
         <P>Count: ${item.count}</p>
         <button class="add" onclick="remove(${index})"> Delete </button>
     </div>
