@@ -12,8 +12,7 @@
 
 #photographyServices .servicesTxt h1 {
 	font-weight: 600;
-	font-size: 42px;
-	font-family: raleway;
+	font-size: 32px;
 }
 
 #photographyServices .servicesTxt p {
@@ -250,4 +249,49 @@ section {
         object-fit: cover;
     }
 }
+
+
+.getInTouch{
+    width: 100%;
+}
+
+.getInTouch .touchTxt{
+    width: 100%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.getInTouch .touchTxt h1{
+    font-size: 90px;
+    font-weight: 900;
+     
+}
+.getInTouch .touchTxt h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.getInTouch .form{
+    width: 100%;
+    display: flex;
+
+}
+
+.getInTouch .form .col-xl-6 img{
+    width: 500px;
+    margin-top: 2%;
+}
+
+
+
+.getInTouch .form .col-xl-6 form .col-md-12 .btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
+    margin-left: 3px;
+    border-color: black;
+    padding: 5px;
+    }
+
 
