@@ -1,0 +1,87 @@
+.pro {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .pro #producte {
+    width: 95%;
+    border-radius: 7px;
+    padding: 14px;
+    box-shadow: 0 0 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pro #producte .boxToForm {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 7px;
+  }
+  .pro #producte .boxToForm .boxes {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+  }
+  .pro #producte .boxToForm .boxes p {
+    width: 10%;
+  }
+  .pro #producte .boxToForm .boxes h1 {
+    width: 10%;
+  }
+
+  .pro #producte .boxToForm .boxes .add {
+    width: 99px;
+    height: 33px;
+    background-color: #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro #producte .boxToForm .boxes .add:hover {
+    background-color: #537480;
+  }
+ 
+
+  
+  .pro #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pro #form input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    padding: 7px;
+  }
+  .pro #form button {
+    width: 100%;
+    height: 40px;
+    background-color: #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro #form button:hover {
+    background-color: #537480;
+  }

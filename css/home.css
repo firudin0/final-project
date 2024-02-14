@@ -274,49 +274,6 @@ width: 100%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Beautiful Client */
 
 #beautifulClient {
@@ -574,6 +531,23 @@ width: 100%;
 	background-color: #537480;
 }
 
+.pro button {
+	margin: 10px;
+	width: 133px;
+	height: 40px;
+	border-radius: 21px;
+	background-color: #336170;
+	transition: background-color 0.4s ease;
+	color: white;
+	border: none;
+  }
+.pro button:hover {
+	background-color: #537480;
+  }
+
+
+
+
 .pro #product .box .boxes img {
 	width: 100%;
 	height: auto;
@@ -628,22 +602,6 @@ width: 100%;
 	font-size: 16px;
 	font-family: italic;
 }
-
-/* Video */
-
-
-/* .video {
-	margin-top: 5%;
-	min-height: auto;
-	object-fit: cover;
-	background-position: absolute;
-	z-index: 10;
-	overflow: hidden;
-}
-
-.video video {
-	width: 100%;
-} */
 
 
 
@@ -772,3 +730,13 @@ footer .container .end_news ul {
 footer .container .end_news ul li a {
 	color: white;
 }
+
+
+
+
+
+
+
+
+
+

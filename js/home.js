@@ -3,10 +3,13 @@
 
 
 const product = document.getElementById('product')
+const loadMoreBtn=document.getElementById("load")
 
+const limit = 3;
+let page = 1;
 
 async function getProducts() {
-    const res = await axios.get(`https://655c844f25b76d9884fd70a7.mockapi.io/products`)
+    const res = await axios.get(`https://655c844f25b76d9884fd70a7.mockapi.io/products?limit=${limit}&page=${page}`)
     const data = await res.data
     db = data
     console.log(db);
@@ -25,7 +28,9 @@ async function getProducts() {
     </div>
         `
         product.appendChild(box)
-    })
+    });
+
+    page++
 }
 
 function addToCart(id) {
@@ -50,3 +55,4 @@ function addToWishlist(id) {
 }
 getProducts()
 
+loadMoreBtn.addEventListener("click", getProducts)
