@@ -10,6 +10,11 @@
 	margin-top: 5%;
 }
 
+.pro #noData h1{
+font-size: 40px;
+color: #336170;
+}
+
 .pro #product {
 	width: 90%;
 	display: flex;

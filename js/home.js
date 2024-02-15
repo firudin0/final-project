@@ -37,11 +37,11 @@ function addToCart(id) {
     const cart = JSON.parse(localStorage.getItem('cart')) || []
     let productItem = cart.find(item => item.id == id)
     if (productItem) {
-        productItem.count = (productItem.count || 1) +1
+        alert('Only 1 product')
     } else {
         cart.push(db.find(item => item.id == id))
+        localStorage.setItem('cart', JSON.stringify(cart))
     }
-    localStorage.setItem('cart', JSON.stringify(cart))
 }
 function addToWishlist(id) {
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || []

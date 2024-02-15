@@ -38,25 +38,37 @@
 
 
 
-<main>
-    <section>
-      <div class="pro">
-        <h1>Add Products</h1>
-        <form id="form" action="" autocomplete="on">
-            <input required id="name" type="text" placeholder="Enter name">
-            <input required id="price" type="number" placeholder="Enter price">
-            <input required id="description" type="text" placeholder="Enter description">
-            <button type="submit">Send</button>
-        </form>
-        <h1>Products</h1>
-        
-        <table id="producte">
-  
-        </table>
-    </div>
+    <main>
+      <section>
+        <div class="pro">
+          <h1>Add Product</h1>
+          <form id="form" action="" autocomplete="on">
+              <input required id="name" type="text" placeholder="Enter name">
+              <input required id="price" type="number" placeholder="Enter price">
+              <input required id="description" type="text" placeholder="Enter description">
+              <button type="submit">Send</button>
+          </form>
+          <h1>Products</h1>
+          <div class="searchByNameSort">
+              <form id="searchForm" action="">
+                  <input required id="searchName" type="text" placeholder="Enter name">
+                  <button type="submit">Search</button>
+              </form>
+              <div class="sort">
+                  <button id="sortAZ">A-Z</button>
+                  <button id="sortZA">Z-A</button>
+                  <button id="sortDefault">Default</button>
+              </div>
+          </div>
+         
+          <table id="producte">
+    
+          </table>
+      </div>
 
-    </section>
-  </main>
+      </section>
+    </main>
+
 
 
 

@@ -85,3 +85,45 @@
   .pro #form button:hover {
     background-color: #537480;
   }
+
+  .pro .searchByNameSort {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .pro .searchByNameSort .sort button {
+    width: 99px;
+    height: 40px;
+    background-color: #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro .searchByNameSort .sort button:hover {
+    background-color: #537480;
+  }
+  .pro .searchByNameSort #searchForm input {
+    width: 148px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 7px;
+  }
+  .pro .searchByNameSort #searchForm button {
+    width: 99px;
+    height: 40px;
+    background-color: #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro .searchByNameSort #searchForm button:hover {
+    background-color: #537480;
+  }
