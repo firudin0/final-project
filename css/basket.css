@@ -10,9 +10,18 @@
 	margin-top: 5%;
 }
 
-.pro #noData h1{
-font-size: 40px;
-color: #336170;
+.pro #noData {
+	display: flex;
+	align-items: center;
+}
+
+.pro #noData img {
+	width: 200px;
+}
+
+.pro #noData h1 {
+	font-size: 40px;
+	color: #336170;
 }
 
 .pro #product {
@@ -49,16 +58,16 @@ color: #336170;
 	font-family: barlow;
 }
 
-.pro #product .box .boxes  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.pro #product .box .boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
 	height: auto;
 
 }
 
-.pro #product .box .boxes  .add {
+.pro #product .box .boxes .add {
 	width: 99px;
 	height: 33px;
 	background-color: #336170;
@@ -73,4 +82,3 @@ color: #336170;
 .pro #product .box .boxes .add:hover {
 	background-color: #537480;
 }
-

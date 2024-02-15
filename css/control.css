@@ -58,6 +58,86 @@
   }
  
 
+
+
+
+
+
+
+
+
+
+
+
+  .pro #users {
+    width: 95%;
+    border-radius: 7px;
+    padding: 14px;
+    box-shadow: 0 0 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pro #users .boxToUsers {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 7px;
+  }
+  .pro #users .boxToUsers .boxes {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+  }
+ 
+  .pro #users .boxToUsers .boxes h1 {
+   font-size: 30px;
+  }
+
+  .pro #users .boxToUsers .boxes .add {
+    width: 99px;
+    height: 33px;
+    background-color: #336170;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 14px;
+  }
+  .pro #users .boxToUsers .boxes .add:hover {
+    background-color: #537480;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   .pro #form {
     display: flex;

@@ -6,7 +6,7 @@ async function getWishlist() {
     const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
     
     if (wishlist.length === 0) {
-      document.getElementById("noData").style.display = "block";
+      document.getElementById("noData").style.display = "flex";
       product.style.display = "none";
     } else {
       document.getElementById("noData").style.display = "none";

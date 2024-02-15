@@ -10,6 +10,15 @@
 	margin-top: 5%;
 }
 
+.pro #noData {
+	display: flex;
+	align-items: center;
+}
+
+.pro #noData img {
+	width: 200px;
+}
+
 .pro #noData h1{
 	font-size: 40px;
 	color: #336170;

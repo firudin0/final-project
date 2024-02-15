@@ -77,14 +77,12 @@
                   <li><a href="/pages/users.html" class="menu--active">Login In</a></li>
                   <li class="addIcon"> <a href="/pages/wishlist.html"><i class="fa-regular fa-heart"></i></a></li>
                   <li class="addIcon"><a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a></li>
-                  <li class="addIcon"><a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a></li>
                 </ul>
               </div>
             </div>
             <div class="headerSwitch">
               <a href="/pages/wishlist.html"><i class="fa-regular fa-heart"></i></a>
               <a href="/pages/basket.html"><i class="fa fa-shopping-cart"></i></a>
-              <a href="/pages/search.html" class="search-switch"><i class="fa fa-search"></i></a>
             </div>
           </nav>
         </div>
@@ -107,29 +105,28 @@
                         style="width: 185px; margin-bottom: 3%;" alt="logo">
                     </div>
     
-                    <form style=" margin-top: 5%;">
+                    <form id="loginForm" style=" margin-top: 5%;">
                       <p>Please login to your account</p>
     
                       <div class="form-outline mb-4">
-                        <input type="email" id="form2Example11" class="form-control"
-                          placeholder="Phone number or email address" />
-                        <label class="form-label" for="form2Example11">Username</label>
+                        <input type="email" id="emailLogin" class="form-control"/>
+                        <label class="form-label" for="form2Example11">Email</label>
                       </div>
     
                       <div class="form-outline mb-4">
-                        <input type="password" id="form2Example22" class="form-control" />
+                        <input type="password" id="passwordLogin" class="form-control" />
                         <label class="form-label" for="form2Example22">Password</label>
                       </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
                           in</button>
                         <a class="text-muted" href="#!">Forgot password?</a>
                       </div>
     
                       <div class="d-flex align-items-center justify-content-center pb-4">
                         <p class="mb-0 me-2">Don't have an account?</p>
-                        <button type="button" class="btn btn-outline-danger toggleButton">Create new</button>
+                        <button type="submit" class="btn btn-outline-danger toggleButton">Create new</button>
                         
                       </div>
     
@@ -166,30 +163,30 @@
                         style="width: 185px; margin-bottom: 3%;" alt="logo">
                     </div>
     
-                    <form>
+                    <form id="registerForm">
 
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1" class="form-control" />
+                            <input type="text" id="firstName" class="form-control" />
                             <label class="form-label" for="form3Example1">First name</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example2" class="form-control" />
+                            <input type="text" id="lastName" class="form-control" />
                             <label class="form-label" for="form3Example2">Last name</label>
                           </div>
                         </div>
                       </div>
                     
                       <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
+                        <input type="email" id="email" class="form-control" />
                         <label class="form-label" for="form3Example3">Email address</label>
                       </div>
                     
                       <div class="form-outline mb-4">
-                        <input type="password" id="form3Example4" class="form-control" />
+                        <input type="password" id="password" class="form-control" />
                         <label class="form-label" for="form3Example4">Password</label>
                       </div>
                     

@@ -180,3 +180,39 @@ function remove(id) {
         getProducts()
     })
 }
+
+
+
+
+
+function getUsers() {
+    users.innerHTML = '';
+    axios.get('https://655c844f25b76d9884fd70a7.mockapi.io/users')
+    .then(res => {
+        db = res.data;
+        db.map(item => {
+            const box = document.createElement('tr'); 
+            box.className = 'boxToUsers ';
+            box.innerHTML = `
+            <div class="boxes">
+            <h1>${item.name}</h1>
+            <h1>${item.lastName}</h1>
+            <h1>${item.email}</h1>
+            <p style="display:none;">€ ${item.password}</p> <!-- changed from item.password to hidden -->
+            <button class="add" onclick="removeUser(${item.id})">Delete</button> <!-- changed 'remove' to 'removeUser' -->
+            </div>
+            `;
+            users.appendChild(box);
+        });
+    });
+}
+
+getUsers();
+
+function removeUser(id) {
+    axios.delete(`https://655c844f25b76d9884fd70a7.mockapi.io/users/${id}`) 
+    .then(res => {
+        getUsers(); 
+    });
+}
+
